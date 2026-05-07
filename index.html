@@ -514,21 +514,79 @@
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
-      nav { padding: 1rem 2rem; }
-      .nav-links { gap: 1.5rem; }
+      nav {
+        padding: 0.8rem 1.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
 
-      #about { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 6rem 2rem 3rem; }
+      .nav-name {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .nav-links {
+        gap: 0.8rem 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-links a { font-size: 0.7rem; letter-spacing: 0.06em; }
+
+      #about {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 100px;
+      }
+
+      .hero-left {
+        padding: 1.5rem 1.5rem 2rem;
+      }
+
+      .hero-tag { font-size: 0.7rem; margin-bottom: 1rem; }
+
+      h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+
+      .hero-bio { font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+      .hero-links { margin-bottom: 1.5rem; }
+
+      .affiliation {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+      }
+
       .hero-right { display: none; }
 
-      section:not(#about) { padding: 4rem 2rem; }
-      footer { padding: 2rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+      section:not(#about) { padding: 3rem 1.5rem; }
+
+      h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+
+      .paper-item {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .paper-status {
+        text-align: left;
+        min-width: auto;
+      }
 
       .teaching-grid,
       .music-grid,
       .contact-grid { grid-template-columns: 1fr; }
 
-      .paper-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .music-platforms { flex-direction: column; }
+
+      footer {
+        padding: 2rem 1.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -542,7 +600,7 @@
       <li><a href="#research">Research</a></li>
       <li><a href="#cv">CV</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#music">Miscellaneous</a></li>
+      <li><a href="#music">Music</a></li>
     </ul>
   </nav>
 
@@ -552,7 +610,7 @@
       <div class="hero-tag">Postdoctoral Researcher · Behavioral Economics</div>
       <h1>Robin<br><em>Musolff</em></h1>
       <p class="hero-bio">
-        I am a Postdoctoral Researcher at the University of Cologne, studying belief formation and individual economic behavior using experimental methods. I received my PhD from the University of Bonn in 2026.
+        I am a Postdoctoral Researcher at the University of Cologne, studying belief formation and individual economic behavior using experimental methods. I received my PhD from the University of Bonn in 2025.
       </p>
       <div class="hero-links">
         <a href="#research" class="btn btn-primary">View Research</a>
@@ -616,9 +674,9 @@
     </div>
   </section>
 
-  <!-- Miscellaneous -->
+  <!-- MUSIC -->
   <section id="music">
-    <h2>Miscellaneous</h2>
+    <h2>Music</h2>
     <p class="music-intro">I also make bedroom pop / indie-folk music under the alias <em>Whoeverthatis</em>.</p>
     <div class="music-platforms">
       <a href="https://open.spotify.com/artist/4gzzd0fCQVXxl4aBt290tu" target="_blank" rel="noopener" class="btn btn-outline">Listen on Spotify</a>
@@ -628,7 +686,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Robin Musolff</p>
+    <p>&copy; 2025 Robin Musolff</p>
   </footer>
 
 </body>
