@@ -252,6 +252,7 @@
       padding: 1.5rem 0;
       border-bottom: 1px solid var(--line);
       display: flex;
+      flex-wrap: wrap;
       align-items: baseline;
       gap: 1.5rem;
     }
@@ -306,6 +307,47 @@
 
     .status-wp { color: var(--warm-mid); }
     .status-progress { color: var(--warm-mid); }
+
+    .paper-abstract {
+      flex: 0 0 100%;
+      margin-top: -0.6rem;
+    }
+
+    .paper-abstract summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      cursor: pointer;
+      list-style: none;
+      transition: opacity 0.2s;
+    }
+
+    .paper-abstract summary::-webkit-details-marker { display: none; }
+
+    .paper-abstract summary::before {
+      content: '+';
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+
+    .paper-abstract[open] summary::before { content: '–'; }
+
+    .paper-abstract summary:hover { opacity: 0.65; }
+
+    .paper-abstract .abstract-body {
+      margin-top: 0.8rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--line);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--warm-mid);
+      font-weight: 300;
+    }
 
     /* TEACHING */
     .teaching-grid {
@@ -666,6 +708,12 @@
           <p>With <a href="https://cproth.com/" target="_blank">Christopher Roth</a> and <a href="https://sites.google.com/site/econflorianzimmermann/" target="_blank">Florian Zimmermann</a></p>
         </div>
         <span class="paper-status status-wp">Working Paper</span>
+        <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              False information often shapes beliefs even after retraction or correction. Using incentivized online experiments, we document a qualitative residue in learning from false information: False quantitative signals generate little to no belief updating, whereas false stories lead to substantial residual belief impact. This effect is robust across a range of design variants. Replacing evaluative stories with more neutral variants eliminates the residue, indicating that the valence of the qualitative information plays a central role. We provide direct evidence that false stories increase mental simulation, measured via self-reports and valence extracted from speech recordings. Respondents are also more confident in beliefs formed after false stories than after false quantitative information, despite being further from the rational benchmark.
+            </div>
+          </details>
       </div>
       <div class="paper-item">
         <div class="paper-content">
@@ -679,6 +727,12 @@
           </p>
         </div>
         <span class="paper-status status-wp">Working Paper</span>
+        <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Mental models help people navigate complex environments. This paper studies how people deal with model uncertainty. In an experiment, participants estimate a company&rsquo;s value, facing uncertainty about which one of two models correctly determines its true value. Using a between-subjects design, we vary the computational complexity of implementing the models. Results show that in high-complexity conditions people fully neglect model uncertainty in their actions. However, their beliefs continue to reflect model uncertainty. Furthermore, we show that complexity, via full uncertainty neglect, leads to higher confidence in the optimality of own actions. We present a simple framework that can generate this set of results and provide evidence on underlying mechanisms that corroborates key model intuitions.
+            </div>
+          </details>
       </div>
       <div class="paper-item">
         <div class="paper-content">
@@ -686,6 +740,12 @@
           <p>With <a href="https://sites.google.com/view/alexanderboecking" target="_blank">Alexander Böcking</a>, <a href="https://cproth.com/" target="_blank">Christopher Roth</a> and <a href="https://sites.google.com/site/econflorianzimmermann/" target="_blank">Florian Zimmermann</a></p>
         </div>
         <span class="paper-status status-wp">Working Paper</span>
+        <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Public attention is a prerequisite for ambitious climate policy, yet competition for human attention is fierce. We present evidence from a 15-wave panel of 2,882 U.S. adults, fielded between August 2024 and October 2025, in which respondents repeatedly answered an open-ended question about the most important problems facing the country. Using an AI-based classification of the free-text responses, we document five key results. First, climate change is rarely top of mind. At any time in our panel, fewer than five percent of respondents name it the country&rsquo;s most important problem, and it is consistently eclipsed by economic issues. Second, this share declined after the November 2024 election and then sharply following the inauguration of President Trump in January 2025, dropping by 1.41 and 3.81 percentage points (pp) within-person, respectively. Third, this decline is concentrated among Democrats, who drop by 7.52 pp at the inauguration, while Republicans show no detectable change. Fourth, climate policy attitudes barely move over this time window. Fifth, at the inauguration, climate is the largest net source of attention switching, with the attention it loses flowing disproportionately to concerns about democratic stability. Our findings highlight that inattention to climate is pervasive and that attention responds sharply to the political environment even as underlying policy attitudes remain stable.
+            </div>
+          </details>
       </div>
       <div class="paper-item">
         <div class="paper-content">
@@ -693,6 +753,12 @@
           <p>With <a href="https://sites.google.com/view/guy-yanay" target="_blank">Guy Yanay</a></p>
         </div>
         <span class="paper-status status-wp">Working Paper</span>
+        <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Differences in factual beliefs between members of opposing political parties are sometimes attributed to politically motivated reasoning&mdash;an asymmetric reaction to information whereby congenial political messages are weighed more heavily. Using a series of survey experiments, we find that these underlying differences in factual beliefs are exaggerated, and that despite the expectations of both the general population and academic experts, US partisans show almost no politically motivated reasoning on the aggregate. What motivated reasoning we do find is asymmetric across parties, more prevalent among the affectively polarized, and most relevant to issues partisans consider important. Our results suggest politically motivated reasoning is unlikely to explain the partisan belief gap. Our experimental design stands out in that it includes easy to understand informative signals, and a direct measure of belief movement in a non-binary environment. Our results suggest that whatever differences in beliefs exist among US partisans originate elsewhere.
+            </div>
+          </details>
       </div>
       <div class="paper-item">
         <div class="paper-content">
